@@ -31,6 +31,8 @@ one_cell_ontology_plot_heatmap(
 }
 \value{
 A ontologyPlot plot of the network of phenotypes in a subset of RD EWCE Results
+heatmapped_value = "q", "fold_change", or "p". In other words, any continuous variable from the all_cell_ontology to be mapped on to the heatmap colors
+reverse_heatmap - reverse reccomeneded for q or p values, so the lowest "most significant" value is red
 }
 \description{
 This subsets the results, using other functions from this script, by cell type,
