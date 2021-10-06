@@ -70,6 +70,7 @@
 #' }
 #' @export
 proportion_of_expected_enrichments_plot <- function(all_results_merged,
+                                                    hpo,
                                                     target_cells=c("Excitatory neurons","Limbic system neurons"),
                                                     cell_type_description = "Neuronal cells",
                                                     HPO_Ids = ontologyIndex::get_descendants(hpo,hpo$id[match("Abnormality of the nervous system",hpo$name)]),
@@ -77,8 +78,7 @@ proportion_of_expected_enrichments_plot <- function(all_results_merged,
                                                     wes_color_palette="Darjeeling1",
                                                     n_colors = 4,
                                                     color_expected_phenotypes = 1,
-                                                    color_other_phenotypes = 4,
-                                                    hpo = hpo
+                                                    color_other_phenotypes = 4
                                                     ) {
   cur_descendants_names = c()
   for(d in HPO_Ids) {
