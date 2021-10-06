@@ -7,6 +7,7 @@
 #' colours are assigned manually to each phenotype in this function. There must be a more
 #' efficent way to do this. Atleas it may be good to replace the for loop with one of the
 #' apply functions.
+#' @import ontologyPlot
 #' @export
 #' @param results The RD EWCE results dataframe
 #' @param cell The cell type of interest <string>
