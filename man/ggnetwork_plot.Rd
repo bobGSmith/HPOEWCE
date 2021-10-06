@@ -7,7 +7,7 @@
 ggnetwork_plot(phenoNet, phenos, disease_descriptions)
 }
 \arguments{
-\item{phenoNet}{The network object created using \code{create_network_object}}
+\item{phenoNet}{The network object created using create_network_object}
 
 \item{phenos}{The subset of results to be plotted (data frame)}
 
