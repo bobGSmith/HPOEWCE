@@ -15,8 +15,9 @@
 #' @param phenotype_to_genes The HPO Ids with associated gene lists downloaded from HPO website
 #' @param hpo The HPO Ontology data object
 #' @returns A ontologyPlot plot of the network of phenotypes in a subset of RD EWCE Results
+#'
 #' @export
-one_cell_ontology_plot_heatmap = function(results, cell = "Bladder cells", heatmapped_value = "q",
+one_cell_ontology_plot_heatmap <- function(results, cell = "Bladder cells", heatmapped_value = "q",
                                           q_threshold, fold_threshold, phenotype_to_genes, hpo){
   #' heatmapped_value = "q", "fold_change", or "p". In other words, any continuous variable from the all_cell_ontology to be mapped on to the heatmap colors
   #' reverse_heatmap - reverse reccomeneded for q or p values, so the lowest "most significant" value is red

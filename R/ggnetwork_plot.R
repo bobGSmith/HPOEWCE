@@ -5,7 +5,7 @@
 #' disease description for each node is also added here in the
 #' \code{pheno_ggnetwork$hover} column. Once the x and y coordiantes have been
 #' added, it can be plot using ggplot2.
-#' @param phenoNet The network object created using \code{create_network_object}
+#' @param phenoNet The network object created using create_network_object
 #' @param phenos The subset of results to be plotted (data frame)
 #' @param disease_descriptions The data frame of all disease descriptions, This is
 #' where new lines are added using the hpo_term_definition_list function.
