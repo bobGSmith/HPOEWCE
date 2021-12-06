@@ -7,6 +7,7 @@
 \usage{
 proportion_of_expected_enrichments_plot(
   all_results_merged,
+  hpo,
   target_cells = c("Excitatory neurons", "Limbic system neurons"),
   cell_type_description = "Neuronal cells",
   HPO_Ids = ontologyIndex::get_descendants(hpo,
@@ -15,12 +16,13 @@ proportion_of_expected_enrichments_plot(
   wes_color_palette = "Darjeeling1",
   n_colors = 4,
   color_expected_phenotypes = 1,
-  color_other_phenotypes = 4,
-  hpo = hpo
+  color_other_phenotypes = 4
 )
 }
 \arguments{
 \item{all_results_merged}{Rare disease EWCE results <data.frame>}
+
+\item{hpo}{The HPO data object from ontologyIndex package}
 
 \item{target_cells}{vector of target cell names <vector<string>>}
 
@@ -42,8 +44,6 @@ palette that you want to represent expected phenotypes <int>}
 
 \item{color_other_phenotypes}{The index of the color from selected palette
 that you want to represent other phenotypes <int>}
-
-\item{hpo}{The HPO data object from ontologyIndex package}
 }
 \description{
 This allows you to select a group of phenotypes by from a particular HPO
